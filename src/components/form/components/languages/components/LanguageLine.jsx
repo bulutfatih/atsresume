@@ -8,7 +8,7 @@ const LanguageLine = ({resumeData, setResumeData, lang, index}) => {
 
   return (
     <div
-      className="flex gap-5 items-center"
+      className="entry-card flex gap-3 items-center"
     >
       <input
         type="text"
@@ -24,7 +24,7 @@ const LanguageLine = ({resumeData, setResumeData, lang, index}) => {
           removeLanguage(resumeData, setResumeData, index)
         }}
         aria-label="Remove"
-        className="p-2 text-white bg-fuchsia-700 rounded text-xl"
+        className="p-2 text-white form-icon-button rounded text-xl"
       >
         <BsTrash3/>
       </button>

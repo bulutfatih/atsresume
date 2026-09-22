@@ -9,7 +9,7 @@ const Education = ({education, index}) => {
 
   return (
     <div
-      className="flex w-fill gap-5 items-top"
+      className="entry-card flex gap-3 items-start"
     >
       <div
         className="flex-1"
@@ -63,7 +63,7 @@ const Education = ({education, index}) => {
           removeEducation(resumeData, setResumeData, index)
         }}
         aria-label="Remove"
-        className="p-2 h-fit text-white bg-fuchsia-700 rounded text-xl"
+        className="p-2 h-fit text-white form-icon-button rounded text-xl"
       >
         <BsTrash3/>
       </button>

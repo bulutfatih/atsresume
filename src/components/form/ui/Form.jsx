@@ -12,17 +12,20 @@ import TestsAndCertifications from "../components/testsAndCertifications/ui/Test
 
 const Form = () => {
   return (
-    <form className="p-4 bg-fuchsia-600 exclude-print md:max-w-[40%] md:h-screen md:overflow-y-scroll">
+    <form className="resume-form exclude-print md:w-[40%] md:h-screen md:overflow-y-auto">
       <LoadUnload/>
-      <PersonalInformation/>
-      <SocialMedias/>
-      <Summary/>
-      <Educations/>
-      <WorkExperiences/>
-      <Projects/>
-      <Skills/>
-      <Languages/>
-      <TestsAndCertifications/>
+      <section className="form-section section-personal"><PersonalInformation/></section>
+      <section className="form-section section-social"><SocialMedias/></section>
+      <section className="form-section section-summary"><Summary/></section>
+      <section className="form-section section-education"><Educations/></section>
+      <section className="form-section section-experience"><WorkExperiences/></section>
+      <section className="form-section section-projects"><Projects/></section>
+      <section className="form-section section-skills">
+        <h2 className="input-title">Skills</h2>
+        <Skills/>
+      </section>
+      <section className="form-section section-languages"><Languages/></section>
+      <section className="form-section section-certifications"><TestsAndCertifications/></section>
     </form>
   );
 };

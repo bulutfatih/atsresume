@@ -8,9 +8,9 @@ import {removeSocialMedia} from "../units/removeSocialMedia";
 const SocialMedia = ({socialMedia, index}) => {
   const {resumeData, setResumeData} = useContext(ResumeContext);
   return (
-    <div className="flex w-fill gap-5 items-top">
+    <div className="entry-card flex gap-3 items-start">
       <div
-        className="flex-wrap-gap-2"
+        className="flex-1 min-w-0 flex-wrap-gap-2"
       >
         <input
           type="text"
@@ -35,7 +35,7 @@ const SocialMedia = ({socialMedia, index}) => {
           removeSocialMedia(resumeData, setResumeData, index)
         }}
         aria-label="Remove"
-        className="p-2 text-white h-fit bg-fuchsia-700 rounded text-xl"
+        className="p-2 text-white h-fit form-icon-button rounded text-xl"
       >
         <BsTrash3/>
       </button>

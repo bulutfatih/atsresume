@@ -12,15 +12,15 @@ const SkillsGroup = ({title}) => {
   );
 
   return (
-    <div className="flex-col-gap-2">
-      <h2 className="input-title">{title}</h2>
+    <div className="skill-group flex-col-gap-2">
+      <h3 className="skill-group-title">{title}</h3>
       {skillType.skills.map((skill, index) => (
         <SkillLine key={index} skill={skill} title={title} index={index}/>
       ))}
       {/* Add new skill button */}
       <button type="button" onClick={() => addSkill(title, setResumeData)}
               aria-label="Add"
-              className="p-2 w-[37px] text-white bg-fuchsia-700 rounded text-xl">
+              className="p-2 w-[37px] text-white form-icon-button rounded text-xl">
         <MdAddCircle/>
       </button>
     </div>
