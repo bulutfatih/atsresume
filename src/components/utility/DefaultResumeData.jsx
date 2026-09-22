@@ -1,88 +1,85 @@
 const DefaultResumeData = {
-  name: "MARCUS HALL",
-  position: "Developer",
-  contactInformation: "+1-555-0100",
-  email: "beddylea@gmail.com",
-  address: "San Francisco, CA",
+  name: "LENA HOFFMANN",
+  position: "Frontend Developer",
+  contactInformation: "+49 30 12345678",
+  email: "lena.hoffmann@example.com",
+  address: "Berlin, Germany",
   profilePicture: "",
   socialMedia: [
     {
-      socialMedia: "Github",
-      link: "github.com//bedivere-lea",
+      socialMedia: "LinkedIn",
+      link: "example.com/lena-hoffmann-linkedin",
     },
     {
-      socialMedia: "LinkedIn",
-      link: "linkedin.com/in/bedivere-lea",
+      socialMedia: "Github",
+      link: "example.com/lena-hoffmann-github",
     },
     {
       socialMedia: "Website",
-      link: "bedivere-lea.github.io",
+      link: "example.com/lena-hoffmann",
     },
   ],
-  summary: "Resourceful Developer with 11 years of experience in designing and developing user interfaces, testing and training employees. Skilled at utilizing a wide variety of tools and programs to provide effective applications.",
+  summary: "Frontend developer based in Berlin with 8 years of experience building accessible web applications for German and European teams. Skilled in React, TypeScript and design systems, with a focus on clear interfaces, performance and practical collaboration.",
   education: [
     {
-      "school": "Bachelor of Computer Science",
-      "degree": "New York University",
-      "startYear": "2020-08-20",
-      "endYear": "2024-07-01"
+      school: "Technische Universität Berlin",
+      degree: "B.Sc. Computer Science",
+      startYear: "2014-10-01",
+      endYear: "2018-08-31",
     },
   ],
   workExperience: [
     {
-      "company": "Torph TTC",
-      "position": "Developer",
-      "description": "Torph TTC is a global software company that offers user interface UI development tools and components for a range of developer applications across all platforms.",
-      "keyAchievements": "Created and maintained 10 web applications for numerous national and foreign clients.\nEnsured that the user interfaces and user experience of the software applications developed by the team met at least 80% of users expectations.\nCreated and analyzed 500 unit test cases.\nDeveloped python scripts to automate image's noise-reduction process which helped improve research analysis time by 40%.\nEstablished and lead a team of 10 people; covering every key role in the early stages.",
-      "startYear": "2023-02-16",
-      "endYear": "2023-02-21"
+      company: "Musterwerk Digital GmbH, Berlin",
+      position: "Senior Frontend Developer",
+      description: "Built customer-facing web applications for a Berlin-based digital product team.",
+      keyAchievements: "Led the rollout of a shared React component library across three products.\nImproved key page load times by 30% through code splitting and image optimization.\nPartnered with designers and product managers to improve accessibility and usability.",
+      startYear: "2023-01-01",
+      endYear: "2026-08-31",
     },
     {
-      "company": "Reilty Group",
-      "position": "Front End Web Developer",
-      "description": "Reilty Group is an industry-leading provider of online gambling software and solutions.",
-      "keyAchievements": "Increased by 35% the reach of users to the platform, over the installation of the web platform in mobile devices.\nDelivered 30 web solutions.\nReplaced 1 full-time web developer under part-time employment achieving a productivity gain of over 60% as measured by working hours.\nWorked with more than 4 different teams at different points of time and provided end-to-end solutions for clients.",
-      "startYear": "2023-02-22",
-      "endYear": "2023-03-09"
+      company: "Hanse Web Studio GmbH, Hamburg",
+      position: "Frontend Developer",
+      description: "Developed responsive websites and dashboards for clients in retail and logistics.",
+      keyAchievements: "Delivered reusable TypeScript components for six client projects.\nIntroduced automated accessibility checks into the release process.\nWorked with remote teams across Germany to launch features on schedule.",
+      startYear: "2020-06-01",
+      endYear: "2022-12-31",
     },
     {
-      "company": "HellX",
-      "position": "Python Developer",
-      "description": "Heller is a Software Editor specialized in logistics management.",
-      "keyAchievements": "Developed several automation systems - saved over $50,000 annually.\nJoined the team as #10 employee as a developer working directly with the biggest customers.\nInvolved in coding as per the requirement, delivered well ahead of time which saved project cost by 20%.\nReduced database size by nearly 50% and improved its performance by 20%.\nDelivery time of good reduced by 50%.",
-      "startYear": "2023-02-22",
-      "endYear": "2023-03-09"
-    }
+      company: "Spree Apps GmbH, Berlin",
+      position: "Junior Web Developer",
+      description: "Supported the development and maintenance of web tools for small businesses.",
+      keyAchievements: "Built mobile-friendly interfaces using JavaScript, HTML and CSS.\nHelped migrate legacy pages to a modern component-based frontend.\nDocumented common UI patterns for the development team.",
+      startYear: "2018-09-01",
+      endYear: "2020-05-31",
+    },
   ],
-  projects: [],
+  projects: [
+    {
+      name: "Berlin Mobility Dashboard",
+      link: "example.com/berlin-mobility-dashboard",
+      description: "A sample dashboard for exploring public transport and cycling data in Berlin.",
+      keyAchievements: "Designed accessible charts and filters.\nBuilt a responsive interface with React and TypeScript.",
+      startYear: "2022-03-01",
+      endYear: "2022-08-31",
+    },
+  ],
   skills: [
     {
       title: "Technical Skills",
-      skills: [
-        "JavaScript", "Python", "Web Services", "C++", "HTML5", "CSS", "SQL", "User Interface", "Creativity"
-      ]
+      skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Next.js", "REST APIs", "Accessibility"],
     },
     {
       title: "Soft Skills",
-      skills: [
-        "Collaboration", "Problem-solving", "Communication", "Time management", "Result-oriented"
-      ]
+      skills: ["Collaboration", "Mentoring", "Problem solving", "Communication"],
     },
     {
       title: "Additional Skills",
-      skills: [
-        "Public Speaking", "Writing", "Research"
-      ] 
-    }
+      skills: ["Design systems", "Agile delivery", "Technical documentation"],
+    },
   ],
-  languages: [
-    "English",
-    "Hindi",
-  ],
-  certifications: [
-    "Certified Web Professional-Web Developer",
-    "Java Development Certified Professional",
-  ],
+  languages: ["German (native)", "English (fluent)"],
+  certifications: ["Professional Scrum Master I", "ISTQB Certified Tester - Foundation Level"],
 };
 
 export default DefaultResumeData;
