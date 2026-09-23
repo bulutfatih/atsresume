@@ -39,7 +39,7 @@ const ModalHighlightMenu = () => {
         borderRadius: "5px",
         padding: "3px",
       }}
-      target="body"
+      target='.preview [contenteditable="true"]'
       menu={() => (
         <>
           <MenuButton title="Bold (Ctrl+B)" icon={<FaBold/>} onClick={toggleBold}/>
