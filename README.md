@@ -4,7 +4,7 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Demo
 
-#### [https://atsresume.vercel.app/](https://atsresume.vercel.app/)
+#### [https://cv.bulutfatih.com/](https://cv.bulutfatih.com/)
 ![image](https://user-images.githubusercontent.com/61316762/218017511-fbbaa7da-6154-449f-9e46-8de45b0e6c29.png)
 
 ### Resume Score
@@ -117,6 +117,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Authors and acknowledgment
+## Credits
 
-- [Saurav Hathi](https://github.com/sauravhathi)
+- Original project by [Saurav Hathi](https://github.com/sauravhathi)
+- This fork maintained by [Fatih Bulut](https://github.com/bulutfatih)

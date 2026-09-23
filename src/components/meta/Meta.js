@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 export default function Meta({ title, keywords, description }) {
-    const homepage = "https://atsresume.vercel.app/";
-    const logo = "https://atsresume.vercel.app/assets/logo.png";
-    const fevicon = "https://atsresume.vercel.app/assets/favicon.ico";
+    const homepage = "https://cv.bulutfatih.com/";
+    const logo = "https://cv.bulutfatih.com/assets/logo.png";
+    const fevicon = "https://cv.bulutfatih.com/assets/favicon.ico";
 
     function isiteJsonLd() {
         return {
