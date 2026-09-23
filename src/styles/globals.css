@@ -351,6 +351,90 @@
 .skill-group .entry-card { padding: 5px; background: transparent; border: 0; }
 .skill-group .entry-card:nth-of-type(even) { background: transparent; }
 
+.resume-floating-action {
+    position: fixed;
+    z-index: 40;
+    bottom: 20px;
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px 16px;
+    border: 1px solid #c8d7dc;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .97);
+    color: #1c5360;
+    box-shadow: 0 8px 24px rgba(22, 44, 54, .16), 0 2px 5px rgba(22, 44, 54, .08);
+    cursor: pointer;
+    font-size: .86rem;
+    font-weight: 750;
+    line-height: 1.2;
+    transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+}
+
+.resume-floating-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 11px 28px rgba(22, 44, 54, .2), 0 3px 7px rgba(22, 44, 54, .1);
+}
+
+.resume-floating-action:active { transform: translateY(0) scale(.98); }
+
+.resume-floating-action:focus-visible {
+    outline: 3px solid #73aeb4;
+    outline-offset: 3px;
+}
+
+.resume-editor-toggle { left: 64px; }
+
+.resume-editor-toggle .resume-floating-action-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.resume-pdf-action {
+    right: 20px;
+    min-width: 190px;
+    justify-content: flex-start;
+    border-color: #145c63;
+    background: #145c63;
+    color: white;
+}
+
+.resume-pdf-action:hover {
+    border-color: #104c53;
+    background: #104c53;
+}
+
+.resume-pdf-action .resume-floating-action-icon {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 auto;
+}
+
+.resume-pdf-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.resume-pdf-label { font-size: .84rem; font-weight: 800; }
+.resume-pdf-hint { color: #d2e6e7; font-size: .66rem; font-weight: 500; }
+
+@media (max-width: 480px) {
+    .resume-floating-action { bottom: 14px; min-height: 48px; padding: 8px 12px; }
+    .resume-editor-toggle { left: 58px; }
+    .resume-pdf-action { right: 14px; min-width: 0; }
+    .resume-pdf-hint { display: none; }
+}
+
+@media (max-width: 380px) {
+    .resume-editor-toggle { left: 14px; }
+    .resume-floating-action { gap: 7px; padding-inline: 10px; font-size: .76rem; }
+    .resume-pdf-action .resume-floating-action-icon { width: 24px; height: 24px; }
+}
+
 .name{
     font-size: 20px;
     font-weight: 700;

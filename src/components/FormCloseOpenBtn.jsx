@@ -1,14 +1,21 @@
-import React, { } from "react";
+import React from "react";
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs"
 
 const FormCloseOpenBtn = ({ formClose, setFormClose }) => {
+  const label = formClose ? "Show editor" : "Hide editor";
+
   return (
     <button
-      aria-label="Form Open/Close"
-      className="exclude-print fixed bottom-5 left-10 font-bold rounded-full bg-white text-teal-800 shadow-lg border-2 border-white"
+      type="button"
+      aria-label={label}
+      title={label}
+      className="exclude-print resume-floating-action resume-editor-toggle"
       onClick={() => setFormClose(!formClose)}
     >
-      {formClose ? <BsFillArrowRightCircleFill className="w-10 h-10" title="Form Open" /> : <BsFillArrowLeftCircleFill className="w-10 h-10" title="Form Close" />}
+      {formClose
+        ? <BsFillArrowRightCircleFill className="resume-floating-action-icon" aria-hidden="true" />
+        : <BsFillArrowLeftCircleFill className="resume-floating-action-icon" aria-hidden="true" />}
+      <span>{label}</span>
     </button>
   )
 }
