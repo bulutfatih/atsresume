@@ -1,28 +1,28 @@
 const DefaultResumeData = {
-  name: "LENA HOFFMANN",
-  position: "Frontend Developer",
+  name: "FATIH BULUT",
+  position: "Frontend Engineer",
   contactInformation: "+49 30 12345678",
-  email: "lena.hoffmann@example.com",
-  address: "Berlin, Germany",
+  email: "fatih.bulut@example.com",
+  address: "Hamburg, Germany",
   profilePicture: "",
   socialMedia: [
     {
       socialMedia: "LinkedIn",
-      link: "example.com/lena-hoffmann-linkedin",
+      link: "linkedin.com/in/fatihbulut",
     },
     {
       socialMedia: "Github",
-      link: "example.com/lena-hoffmann-github",
+      link: "github.com/bulutfatih",
     },
     {
       socialMedia: "Website",
-      link: "example.com/lena-hoffmann",
+      link: "bulutfatih.com",
     },
   ],
-  summary: "Frontend developer based in Berlin with 8 years of experience building accessible web applications for German and European teams. Skilled in React, TypeScript and design systems, with a focus on clear interfaces, performance and practical collaboration.",
+  summary: "Frontend engineer based in Hamburg with 8 years of experience building accessible web applications for German and European teams. Skilled in React, TypeScript and design systems, with a focus on clear interfaces, performance and practical collaboration.",
   education: [
     {
-      school: "Technische Universität Berlin",
+      school: "Technische Universität Hamburg",
       degree: "B.Sc. Computer Science",
       startYear: "2014-10-01",
       endYear: "2018-08-31",
@@ -30,9 +30,9 @@ const DefaultResumeData = {
   ],
   workExperience: [
     {
-      company: "Musterwerk Digital GmbH, Berlin",
+      company: "Musterwerk Digital GmbH, Hamburg",
       position: "Senior Frontend Developer",
-      description: "Built customer-facing web applications for a Berlin-based digital product team.",
+      description: "Built customer-facing web applications for a Hamburg-based digital product team.",
       keyAchievements: "Led the rollout of a shared React component library across three products.\nImproved key page load times by 30% through code splitting and image optimization.\nPartnered with designers and product managers to improve accessibility and usability.",
       startYear: "2023-01-01",
       endYear: "2026-08-31",
@@ -56,9 +56,9 @@ const DefaultResumeData = {
   ],
   projects: [
     {
-      name: "Berlin Mobility Dashboard",
-      link: "example.com/berlin-mobility-dashboard",
-      description: "A sample dashboard for exploring public transport and cycling data in Berlin.",
+      name: "Hamburg Mobility Dashboard",
+      link: "example.com/Hamburg-mobility-dashboard",
+      description: "A sample dashboard for exploring public transport and cycling data in Hamburg.",
       keyAchievements: "Designed accessible charts and filters.\nBuilt a responsive interface with React and TypeScript.",
       startYear: "2022-03-01",
       endYear: "2022-08-31",
