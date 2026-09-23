@@ -1,15 +1,6 @@
 import React from 'react';
 import DateRange from "../../../../utility/DateRange";
-import dynamic from "next/dynamic";
-
-const Droppable = dynamic(
-  () => import("react-beautiful-dnd").then((mod) => mod.Droppable),
-  {ssr: false}
-);
-const Draggable = dynamic(
-  () => import("react-beautiful-dnd").then((mod) => mod.Draggable),
-  {ssr: false}
-);
+import {Droppable, Draggable} from "@hello-pangea/dnd";
 
 const WorkExperience = ({item, index}) => {
   return (
@@ -42,6 +33,9 @@ const WorkExperience = ({item, index}) => {
           <Droppable
             droppableId={`WORK_EXPERIENCE_KEY_ACHIEVEMENT-${index}`}
             type="WORK_EXPERIENCE_KEY_ACHIEVEMENT"
+            isDropDisabled={false}
+            isCombineEnabled={false}
+            ignoreContainerClipping={false}
           >
             {(provided) => (
               <ul

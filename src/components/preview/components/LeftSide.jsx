@@ -2,16 +2,7 @@ import Skills from "../components/Skills";
 import DateRange from "../../utility/DateRange";
 import Language from "../components/Language";
 import Certification from "../components/Certification";
-import dynamic from "next/dynamic";
-
-const Droppable = dynamic(
-  () => import("react-beautiful-dnd").then((mod) => mod.Droppable),
-  { ssr: false }
-);
-const Draggable = dynamic(
-  () => import("react-beautiful-dnd").then((mod) => mod.Draggable),
-  { ssr: false }
-);
+import {Droppable, Draggable} from "@hello-pangea/dnd";
 
 const LeftSide = ({ resumeData }) => {
   return (
@@ -44,7 +35,13 @@ const LeftSide = ({ resumeData }) => {
         </div>
       )}
 
-      <Droppable droppableId="skills" type="SKILLS">
+      <Droppable
+        droppableId="skills"
+        type="SKILLS"
+        isDropDisabled={false}
+        isCombineEnabled={false}
+        ignoreContainerClipping={false}
+      >
         {(provided) => (
           <div {...provided.droppableProps} ref={provided.innerRef}>
             {resumeData.skills.map((skill, index) => (

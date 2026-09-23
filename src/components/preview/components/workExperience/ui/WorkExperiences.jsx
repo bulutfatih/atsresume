@@ -1,18 +1,19 @@
 import React, {useContext} from 'react';
-import dynamic from "next/dynamic";
+import {Droppable} from "@hello-pangea/dnd";
 import {ResumeContext} from "../../../../builder";
 import WorkExperience from "../components/WorkExperience";
-
-const Droppable = dynamic(
-  () => import("react-beautiful-dnd").then((mod) => mod.Droppable),
-  {ssr: false}
-);
 
 const WorkExperiences = () => {
   const {resumeData} = useContext(ResumeContext);
 
   return (
-    <Droppable droppableId="work-experience" type="WORK_EXPERIENCE">
+    <Droppable
+      droppableId="work-experience"
+      type="WORK_EXPERIENCE"
+      isDropDisabled={false}
+      isCombineEnabled={false}
+      ignoreContainerClipping={false}
+    >
       {(provided) => (
         <div {...provided.droppableProps} ref={provided.innerRef}>
           <h2
@@ -26,6 +27,7 @@ const WorkExperiences = () => {
             <WorkExperience
               key={index}
               item={item}
+              index={index}
             />
           ))}
           {provided.placeholder}

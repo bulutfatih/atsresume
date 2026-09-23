@@ -3,7 +3,6 @@
 import React, {createContext, useState} from "react";
 import Meta from "../components/meta/Meta";
 import FormCloseOpenBtn from "../components/FormCloseOpenBtn";
-import Preview from "../components/preview/ui/Preview";
 import DefaultResumeData from "../components/utility/DefaultResumeData";
 import dynamic from "next/dynamic";
 import Form from "../components/form/ui/Form";
@@ -12,6 +11,9 @@ const ResumeContext = createContext(DefaultResumeData);
 
 // server side rendering false
 const Print = dynamic(() => import("../components/utility/WinPrint"), {
+  ssr: false,
+});
+const Preview = dynamic(() => import("../components/preview/ui/Preview"), {
   ssr: false,
 });
 
