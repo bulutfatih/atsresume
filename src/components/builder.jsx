@@ -25,13 +25,18 @@ export default function Builder() {
   const [formClose, setFormClose] = useState(false);
 
   // profile picture
-  const handleProfilePicture = (e) => {
-    const file = e.target.files[0];
+  const handleProfilePicture = (fileOrEvent) => {
+    const file = fileOrEvent instanceof Blob
+      ? fileOrEvent
+      : fileOrEvent.target.files[0];
 
     if (file instanceof Blob) {
       const reader = new FileReader();
       reader.onload = (event) => {
-        setResumeData({...resumeData, profilePicture: event.target.result});
+        setResumeData((currentData) => ({
+          ...currentData,
+          profilePicture: event.target.result,
+        }));
       };
       reader.readAsDataURL(file);
     } else {
