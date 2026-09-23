@@ -14,23 +14,23 @@ export default function Meta({ title, keywords, description }) {
                 "logo": ${logo},
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "+91 9999999999",
+                    "telephone": "+49 123456789",
                     "contactType": "customer service"
                 },
                 "image": ${logo},
                 "description": ${description},
-                "founder": "Saurav Hathi",
-                "foundingDate": "2023",
-                "foundingLocation": "IN",
-                "email": "xyz@gmail.com",
-                "telephone": "+91 9999999999",
-                "areaServed": "IN",
+                "founder": "Fatih Bulut",
+                "foundingDate": "2026",
+                "foundingLocation": "DE",
+                "email": "email@example.com",
+                "telephone": "+49 123456789",
+                "areaServed": "DE",
                 "keywords": ${keywords},
                 "mainEntityOfPage": ${homepage},
                 "knowsAbout": ${keywords},
                 "knowsLanguage": "English",
-                "memberOf": "Saurav Hathi",
-                "owns": "Saurav Hathi",
+                "memberOf": "Fatih Bulut",
+                "owns": "Fatih Bulut",
                 "publishingPrinciples": ${homepage},
                 "slogan": "Get hired with an ATS-optimized resume"
             }`
@@ -47,7 +47,7 @@ export default function Meta({ title, keywords, description }) {
             <link rel="icon" href={fevicon} />
             <title>{title}</title>
             <meta type="copyright" content="ATSResume" />
-            <meta type="author" content="Saurav Hathi" />
+            <meta type="author" content="Fatih Bulut" />
             {/* Open Graph */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={homepage} />
