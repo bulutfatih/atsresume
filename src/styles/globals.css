@@ -70,6 +70,13 @@
         @apply hover:bg-gray-100 hover:cursor-text outline-none;
     }
 
+    /* Draggable rows expose a grab cursor from their drag handle. Keep text
+       editing areas feeling like text fields while leaving the surrounding
+       row available as a drag surface. */
+    .preview [contenteditable="true"] {
+        cursor: text;
+    }
+
 }
 
 /* Each form section has its own restrained accent. Repeated entries use a
