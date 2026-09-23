@@ -1,4 +1,4 @@
-import { FaCloudUploadAlt, FaCloudDownloadAlt } from "react-icons/fa";
+import { FaCloudUploadAlt, FaCloudDownloadAlt, FaGithub } from "react-icons/fa";
 import React, { useContext } from "react";
 import {ResumeContext} from "../../builder";
 
@@ -34,6 +34,17 @@ const LoadUnload = () => {
         <h1 className="form-heading">Your details</h1>
         <p className="form-subheading">Fill in the sections below to shape your resume.</p>
       </div>
+      <a
+        aria-label="View ATSResume on GitHub"
+        className="project-repo-link"
+        href="https://github.com/bulutfatih/atsresume"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="View the project on GitHub"
+      >
+        <FaGithub aria-hidden="true" />
+        <span>GitHub</span>
+      </a>
       <div className="form-data-actions">
         <label className="data-action cursor-pointer">
           <FaCloudUploadAlt aria-hidden="true" />
